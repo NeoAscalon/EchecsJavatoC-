@@ -1,15 +1,11 @@
 #include "CPiece.h"
 
-class CPiece
+CPiece::CPiece(Couleur Coul, CEchequier &ech)
 {
-public:
 
-	CPiece();
-	~CPiece();
+}
 
-private:
-	char rep;
-	int x;
-	int y;
+CPiece::~CPiece()
+{
 
-};
+}

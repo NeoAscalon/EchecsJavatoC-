@@ -1,11 +1,19 @@
 #pragma once
+#include "CEchequier.h"
 
-CPiece::CPiece()
+enum Couleur { Noir, Rouge };
+
+class CPiece
 {
+public:
 
-}
+	CPiece(Couleur, CEchequier&);
+	~CPiece();
 
-CPiece::~CPiece()
-{
+private:
+	CEchequier ech;
+	char rep;
+	int x;
+	int y;
 
-}
+};

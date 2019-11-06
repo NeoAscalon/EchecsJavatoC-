@@ -142,9 +142,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CEchequier.h" />
     <ClInclude Include="CPiece.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CEchequier.cpp" />
     <ClCompile Include="CPiece.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
