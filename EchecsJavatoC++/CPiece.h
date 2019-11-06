@@ -1,6 +1,9 @@
 #pragma once
 #include "CEchequier.h"
 #include<iostream>
+#include <string>
+
+using namespace std;
 
 enum Couleur { Noir, Rouge };
 
@@ -16,7 +19,7 @@ public:
 	~CPiece();
 
 private:
-	CEchequier ech;
+	CEchequier unEchequier;
 	char rep;
 	int x = -1;
 	int y = -1;

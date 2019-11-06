@@ -25,15 +25,13 @@ void CPiece::placer(int, int)
 CPiece::CPiece(Couleur Coul, CEchequier &ech)
 {
 	if (ech == NULL) {
-		cout << "l'echiquier est vide"<<endl;
+		cout << "L'echiquier est vide" << endl;
 	}
 	else {
-		unEchiquier = ech;
-		if (coul == Couleur.Noir || coul == Couleur.Blanc) {
-			couleur = coul;
+		unEchequier = ech;
+		if (Coul != Noir || Coul != Rouge) {
+			cout << "Une piece n'est pas de la bonne couleur /t" << "Couleur erronee : " << Coul;
 		}
-		else {
-			System.out.println("Couleur erronee : " + couleur);
 		}
 	}
 }
