@@ -1,5 +1,6 @@
 #pragma once
 #include "CEchequier.h"
+#include<iostream>
 
 enum Couleur { Noir, Rouge };
 
