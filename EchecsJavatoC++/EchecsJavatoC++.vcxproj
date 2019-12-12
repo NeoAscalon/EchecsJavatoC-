@@ -22,32 +22,32 @@
     <ProjectGuid>{657B1BD3-1BF7-42AE-B0DB-EFB318C7D950}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>EchecsJavatoC</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -142,12 +142,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CCavalier.h" />
+    <ClInclude Include="CCouleur.h" />
+    <ClInclude Include="CDame.h" />
     <ClInclude Include="CEchequier.h" />
+    <ClInclude Include="CExceptionDeplacement.h" />
+    <ClInclude Include="CFou.h" />
+    <ClInclude Include="CJeuEchec.h" />
     <ClInclude Include="CPiece.h" />
+    <ClInclude Include="CPion.h" />
+    <ClInclude Include="CRoi.h" />
+    <ClInclude Include="CTour.h" />
+    <ClInclude Include="IHM.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CCavalier.cpp" />
+    <ClCompile Include="CCouleur.cpp" />
+    <ClCompile Include="CDame.cpp" />
     <ClCompile Include="CEchequier.cpp" />
+    <ClCompile Include="CExceptionDeplacement.cpp" />
+    <ClCompile Include="CFou.cpp" />
+    <ClCompile Include="CJeuEchec.cpp" />
     <ClCompile Include="CPiece.cpp" />
+    <ClCompile Include="CPion.cpp" />
+    <ClCompile Include="CRoi.cpp" />
+    <ClCompile Include="CTour.cpp" />
+    <ClCompile Include="IHM.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
