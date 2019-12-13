@@ -1,11 +1,9 @@
 #pragma once
+#include "CPiece.h"
 
-class CDame
+class CDame : public CPiece
 {
 public:
-	CDame();
-	~CDame();
-
-private:
-
+	CDame(Couleur c, CEchequier* ech);
+	CPiece* Deplacer(int xa, int ya);
 };

@@ -1,11 +1,13 @@
 #pragma once
+#include "CPiece.h"
 
-class CPion
+class CPion :public CPiece
 {
-public:
-	CPion();
-	~CPion();
-
 private:
+	bool premierCoup = true;
 
+public:
+	CPion(Couleur c, CEchequier* ech);
+	CPiece* Deplacer(int xa, int ya);
 };
+

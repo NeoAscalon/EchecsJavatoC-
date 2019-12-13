@@ -1,10 +1,13 @@
 #pragma once
+#include <iostream>
 
-class CExceptionDeplacement
+using namespace std;
+
+class CExceptionDeplacement : public exception
 {
 public:
-	CExceptionDeplacement();
-	~CExceptionDeplacement();
+	CExceptionDeplacement(string ex);
+	CExceptionDeplacement(int x, int y, string message);
 
 private:
 

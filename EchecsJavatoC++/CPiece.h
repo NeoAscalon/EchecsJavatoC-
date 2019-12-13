@@ -9,19 +9,19 @@ enum Couleur { Noir, Rouge };
 
 class CPiece
 {
-public:
-	void situer(int, int);
-	void Deplacer(int,int);
-	bool verifier(int, int);
-	bool trajectoire(int, int);
-	void placer(int, int);
-	CPiece(Couleur, CEchequier&);
-	~CPiece();
-
-private:
-	CEchequier unEchequier;
+protected:
+	CEchequier* unEchiquier;
 	char rep;
+	Couleur couleur;
 	int x = -1;
 	int y = -1;
-
+public:
+	CPiece(Couleur coul, CEchequier* ech);
+	void situer(int x, int y);
+	Couleur getCouleur();
+	char getRepresentation();
+	virtual CPiece* deplacer(int xa, int ya) = 0;
+	bool verifier(int xa, int ya);
+	bool trajectoire(int xa, int ya);
+	CPiece* placer(int xa, int ya);
 };

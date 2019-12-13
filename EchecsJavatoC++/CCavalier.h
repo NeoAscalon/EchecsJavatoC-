@@ -1,12 +1,9 @@
 #pragma once
+#include "CPiece.h"
 
-class CCavalier
+class CCavalier :public CPiece
 {
 public:
-	CCavalier();
-	~CCavalier();
-
-private:
-
+	CCavalier(Couleur c, CEchequier* ech);
+	CPiece* Deplacer(int xa, int ya);
 };
-

@@ -1,10 +1,12 @@
 #pragma once
+#include "CPiece.h"
 
-class CRoi
+class CRoi :public CPiece
 {
 public:
-	CRoi();
+	CRoi(Couleur c, CEchequier* ech);
 	~CRoi();
+	CPiece* Deplacer(int xa, int ya);
 
 private:
 

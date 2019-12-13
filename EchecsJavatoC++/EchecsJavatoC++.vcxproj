@@ -143,7 +143,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CCavalier.h" />
-    <ClInclude Include="CCouleur.h" />
     <ClInclude Include="CDame.h" />
     <ClInclude Include="CEchequier.h" />
     <ClInclude Include="CExceptionDeplacement.h" />
@@ -157,7 +156,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CCavalier.cpp" />
-    <ClCompile Include="CCouleur.cpp" />
     <ClCompile Include="CDame.cpp" />
     <ClCompile Include="CEchequier.cpp" />
     <ClCompile Include="CExceptionDeplacement.cpp" />

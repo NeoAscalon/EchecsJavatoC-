@@ -1,10 +1,12 @@
 #pragma once
+#include "CPiece.h"
 
-class CTour
+class CTour :public CPiece
 {
 public:
-	CTour();
+	CTour(Couleur c, CEchequier* ech);
 	~CTour();
+	CPiece* Deplacer(int xa, int ya);
 
 private:
 
