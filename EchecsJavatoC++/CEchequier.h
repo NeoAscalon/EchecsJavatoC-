@@ -16,6 +16,7 @@ private:
 	CPiece* damier[8][8];
 public:
 	CEchequier();
+	~CEchequier();
 	CPiece* getPiece(int x, int y);
 	void setPiece(int x, int y, CPiece* p);
 	CPiece* enleverPiece(int x, int y);

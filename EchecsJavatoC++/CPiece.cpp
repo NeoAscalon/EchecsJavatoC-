@@ -8,7 +8,7 @@ CPiece::CPiece(Couleur coul, CEchequier* ech)
 	}
 	else
 	{
-		unEchiquier = ech;
+		unEchequier = ech;
 		if (coul == Noir || coul == Rouge)
 		{
 			couleur = coul;
@@ -27,7 +27,7 @@ void CPiece::situer(int x, int y)
 	else {
 		this->x = x;
 		this->y = y;
-		unEchiquier->setPiece(x, y, this);
+		unEchequier->setPiece(x, y, this);
 	}
 }
 
@@ -90,7 +90,7 @@ bool CPiece::trajectoire(int xa, int ya)
 		int ix = x + c * dx;
 		int iy = y + c * dy;
 
-		if (unEchiquier->getPiece(ix, iy) != nullptr)
+		if (unEchequier->getPiece(ix, iy) != nullptr)
 		{
 			cout << "case(" << ix << "," << iy << ") occupee" << endl;
 			trajectoireOK = false;
@@ -102,19 +102,19 @@ bool CPiece::trajectoire(int xa, int ya)
 CPiece* CPiece::placer(int xa, int ya)
 {
 	CPiece* prise = nullptr;
-	if (unEchiquier->getPiece(xa, ya) != nullptr)
+	if (unEchequier->getPiece(xa, ya) != nullptr)
 	{
-		if (unEchiquier->getPiece(xa, ya)->getCouleur() == couleur)
+		if (unEchequier->getPiece(xa, ya)->getCouleur() == couleur)
 		{
 			cout << "La case d'arrivee est occupee par une piece de meme couleur" << endl;
 			//throw new ExceptionDeplacement(xa,ya,"Case occupe par une piece de meme couleur");
 		}
 		else {
 			cout << "prise de la piece" << endl;
-			prise = unEchiquier->enleverPiece(xa, ya);
+			prise = unEchequier->enleverPiece(xa, ya);
 		}
 	}
-	unEchiquier->enleverPiece(x, y);
+	unEchequier->enleverPiece(x, y);
 	situer(xa, ya);
 	cout << "Deplacement effectue" << endl;
 	return prise;

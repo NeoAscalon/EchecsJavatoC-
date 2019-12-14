@@ -8,6 +8,7 @@ private:
 
 public:
 	CPion(Couleur c, CEchequier* ech);
+	~CPion();
 	CPiece* Deplacer(int xa, int ya);
 };
 

@@ -56,7 +56,7 @@ CPiece* CPion::Deplacer(int xa, int ya)
 		}
 
 		// il ne manque plus qu'a verifier que la case d'arrivee soit libre
-		if (unEchiquier->getPiece(xa, ya) != nullptr) {
+		if (unEchequier->getPiece(xa, ya) != nullptr) {
 			//Si elle n'est pas libre, on arrete
 			//System.out.println(" case d'arrivee non libre");
 			cout << "case d'arrivee non libre" << endl;
@@ -72,7 +72,7 @@ CPiece* CPion::Deplacer(int xa, int ya)
 	} // si deplacement en biais d'un case : case occupee par une piece opposee
 	else {
 		// Si la case est occupée par une piece de la même couleur, on arrete
-		if (unEchiquier->getPiece(xa, ya) == nullptr || unEchiquier->getPiece(xa, ya)->getCouleur() == couleur)
+		if (unEchequier->getPiece(xa, ya) == nullptr || unEchequier->getPiece(xa, ya)->getCouleur() == couleur)
 		{
 			//System.out.println(" la case n'est pas occupee par une piece opposee");
 			cout << "la case n'est pas occupee par une piece opposee" << endl;

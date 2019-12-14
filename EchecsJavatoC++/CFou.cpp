@@ -1,6 +1,6 @@
 #include "CFou.h"
 
-CFou::CFou(Couleur c, CEchiquier* ech) :CPiece(c, ech)
+CFou::CFou(Couleur c, CEchequier* ech) :CPiece(c, ech)
 {
 	rep = 'F';
 	if (c == Couleur(Noir))

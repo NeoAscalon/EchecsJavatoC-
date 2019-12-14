@@ -8,7 +8,7 @@ class CExceptionDeplacement : public exception
 public:
 	CExceptionDeplacement(string ex);
 	CExceptionDeplacement(int x, int y, string message);
-
+	~CExceptionDeplacement();
 private:
 
 };

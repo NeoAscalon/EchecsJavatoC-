@@ -13,9 +13,10 @@ using namespace std;
 class CJeuEchec
 {
 private:
-	CEchiquier* echiquier;
+	CEchequier* echequier;
 public:
 	CJeuEchec();
+	~CJeuEchec();
 	void initialiser();
 	CPiece* jouer(int x, int y, int xa, int ya, int compteur);
 	CPiece* lirePiece(int x, int y);

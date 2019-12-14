@@ -11,7 +11,7 @@ CDame::~CDame()
 {
 }
 
-CPiece* Deplacer(int xa, int ya)
+CPiece* CDame::Deplacer(int xa, int ya)
 {
 	CPiece* prise = nullptr;
 	if (verifier(xa, ya)) {
