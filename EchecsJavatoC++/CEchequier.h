@@ -1,5 +1,4 @@
 #pragma once
-#include "CPiece.h"
 #include <iostream>
 #include <cmath>
 #include <string>

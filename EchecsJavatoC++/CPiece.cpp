@@ -18,6 +18,11 @@ CPiece::CPiece(Couleur coul, CEchequier* ech)
 	}
 }
 
+CPiece::~CPiece()
+{
+
+}
+
 void CPiece::situer(int x, int y)
 {
 	if (x < 0 || x>7 || y < 0 || y>7)
@@ -107,7 +112,6 @@ CPiece* CPiece::placer(int xa, int ya)
 		if (unEchequier->getPiece(xa, ya)->getCouleur() == couleur)
 		{
 			cout << "La case d'arrivee est occupee par une piece de meme couleur" << endl;
-			//throw new ExceptionDeplacement(xa,ya,"Case occupe par une piece de meme couleur");
 		}
 		else {
 			cout << "prise de la piece" << endl;
