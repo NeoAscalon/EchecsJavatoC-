@@ -43,7 +43,7 @@ void main()
 		try {
 			cout << "Compteur : " << compteur << endl;
 			if (compteur % 2 == 0) {
-				cout << "C'est aux Blancs de Jouer! " << endl;
+				cout << "C'est aux Rouges de Jouer! " << endl;
 			}
 			else {
 				cout << "C'est aux Noirs de Jouer! " << endl;

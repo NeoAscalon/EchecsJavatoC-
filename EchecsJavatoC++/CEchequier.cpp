@@ -1,5 +1,6 @@
 #include "CEchequier.h"
 #include "CPiece.h"
+
 CEchequier::CEchequier()
 {
 	for (int i = 0; i < 8; i++)
